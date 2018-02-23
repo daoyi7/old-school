@@ -52,7 +52,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: os.title,
-      template: os.template
+      template: os.template,
+      dllPath: os.output
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
