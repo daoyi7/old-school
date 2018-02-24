@@ -1,4 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Welcome from 'container/welcome'
 
-render(<div>old school</div>, document.getElementById('app'))
+render(<Welcome />, document.getElementById('app'))

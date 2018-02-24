@@ -45,9 +45,17 @@ module.exports = {
         ]
       },{
         test: /\.(js|jsx)$/,
-        use: 'babel-loader'
+        use: ['babel-loader']
       }
     ]
+  },
+  resolve: {
+    // 配置引用文件时可省略的后缀名
+    extensions: [" ", ".js", ".json", ".jsx"],
+    alias: {
+      components: path.resolve(__dirname, '../src/components'),
+      container: path.resolve(__dirname, '../src/container')
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
