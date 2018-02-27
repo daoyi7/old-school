@@ -1,10 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, browserHistory } from 'react-router'
+import { Provider } from 'react-redux'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import routes from './routes.js'
-import Welcome from 'container/welcome'
+import store from './store.js'
+import Root from 'container/root'
 
 render(
-  <Router history={browserHistory} routes={routes}>
-    {/* <Welcome /> */}
-  </Router>, document.getElementById('app'))
+  <Provider store={store}>
+    <Router history={browserHistory} routes={routes}>
+      {/* <Root /> */}
+    </Router>
+  </Provider>, document.getElementById('app'))

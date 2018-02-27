@@ -43,7 +43,7 @@ module.exports = {
             loader: 'file-loader'
           }
         ]
-      },{
+      }, {
         test: /\.(js|jsx)$/,
         use: ['babel-loader']
       }
@@ -70,5 +70,7 @@ module.exports = {
     host: '0.0.0.0',
     port: os.port,
     hot: true,
+    inline: true,
+    historyApiFallback: true
   }
 }
