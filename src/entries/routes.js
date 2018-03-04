@@ -2,6 +2,7 @@ import React from 'react'
 import Welcome from 'container/welcome'
 import Home from 'container/home'
 import Root from 'container/root'
+import HelloWorld from 'container/helloword/hello-word';
 
 const routes = [
   {
@@ -21,6 +22,10 @@ const routes = [
       {
         path: 'welcome',
         component: Welcome
+      },
+      {
+        path: 'hello',
+        component: HelloWorld
       }
     ]
   }

@@ -46,6 +46,9 @@ module.exports = {
       }, {
         test: /\.(js|jsx)$/,
         use: ['babel-loader']
+      }, {
+        test: /\.md$/,
+        loader: 'babel!react-markdown'
       }
     ]
   },
