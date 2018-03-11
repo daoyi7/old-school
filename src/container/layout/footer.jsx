@@ -1,10 +1,13 @@
 import React from 'react'
+import Text from 'components/text'
+import {Link} from 'react-router'
+import style from './styles/footer.less'
 
 class Footer extends React.Component {
   render() {
     return (
-      <div>
-        <h2>This is Footer Component</h2>
+      <div className={style.footer}>
+        <Text><Link to="/">old-school</Link> is Developed By Kawhi</Text>
       </div>
     )
   }
